@@ -5,7 +5,7 @@
 # @file: install_ros.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2018-11-06 14:33:45
-# @last_modified_date: 2018-11-06 15:50:48
+# @last_modified_date: 2018-11-06 18:29:08
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -16,9 +16,8 @@ CREATED_TIME=`date '+%Y-%m-%d %H:%M:%S'`
 CREATED_YEAR=`date '+%Y'`
 
 #---Shell Command
-sudo apt update && sudo apt upgrade
+sudo apt update
 sudo apt install -y \
-build_essential \
 git \
 python-rosinstall \
 python-rosinstall-generator \
