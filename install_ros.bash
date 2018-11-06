@@ -5,7 +5,7 @@
 # @file: install_ros.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2018-11-06 14:33:45
-# @last_modified_date: 2018-11-06 18:29:08
+# @last_modified_date: 2018-11-06 18:48:38
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -34,9 +34,10 @@ sudo apt update
 sudo apt -y install ros-melodic-desktop-full \
                     ros-melodic-map* \
                     ros-melodic-joy* \
+                    ros-melodic-tf*
 
 sudo rosdep init
-sudo rosdep update
+rosdep update
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
