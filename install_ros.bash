@@ -5,7 +5,7 @@
 # @file: install_ros.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2018-11-06 14:33:45
-# @last_modified_date: 2018-11-06 18:48:38
+# @last_modified_date: 2018-11-07 18:52:36
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -41,4 +41,18 @@ rosdep update
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-
+git clone https://github.com/vim/vim.git
+cd vim
+./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --with-python-config-dir=/usr/lib/python2.7/config \ # pay attention here check directory correct
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/lib/python3.5/config \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
+            --enable-gui=gtk2 \
+            --enable-cscope \
+            --prefix=/usr/local
+sudo make install
