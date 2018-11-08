@@ -5,7 +5,7 @@
 # @file: install_ros.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2018-11-06 14:33:45
-# @last_modified_date: 2018-11-07 18:52:36
+# @last_modified_date: 2018-11-08 08:23:48
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -26,7 +26,22 @@ build-essential \
 vim \
 ctags \
 libopencv-* \
-
+libncurses5-dev \
+libgnome2-dev \
+libgnomeui-dev \
+libgtk2.0-dev \
+libatk1.0-dev \
+libbonoboui2-dev \
+libcairo2-dev \
+libx11-dev \
+libxpm-dev \
+libxt-dev \
+python-dev \
+python3-dev \
+ruby-dev \
+lua5.1 \
+lua5.1-dev \
+git
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
