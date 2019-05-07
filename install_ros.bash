@@ -16,9 +16,10 @@ CREATED_TIME=`date '+%Y-%m-%d %H:%M:%S'`
 CREATED_YEAR=`date '+%Y'`
 
 #---Shell Command
-sudo apt update
+sudo apt update &&
 sudo apt install -y \
 git \
+wget \
 python-rosinstall \
 python-rosinstall-generator \
 python-wstool \
@@ -40,11 +41,11 @@ python-dev \
 python3-dev \
 ruby-dev \
 lua5.1 \
-lua5.1-dev \
-git
+lua5.1-dev \ &&
 
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo sh -c 'echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/  $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add - &&
+#sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 sudo apt update
 sudo apt -y install ros-melodic-desktop-full \
                     ros-melodic-map* \
@@ -52,7 +53,7 @@ sudo apt -y install ros-melodic-desktop-full \
                     ros-melodic-tf*
 
 sudo rosdep init
-rosdep update
+rosdep update &&
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
