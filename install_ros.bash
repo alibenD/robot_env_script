@@ -41,7 +41,7 @@ python-dev \
 python3-dev \
 ruby-dev \
 lua5.1 \
-lua5.1-dev \ &&
+lua5.1-dev &&
 
 sudo sh -c 'echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/  $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add - &&
