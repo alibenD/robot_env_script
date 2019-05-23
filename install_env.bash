@@ -5,7 +5,7 @@
 # @file: install_env.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-23 16:52:04
-# @last_modified_date: 2019-05-23 17:29:19
+# @last_modified_date: 2019-05-23 17:47:11
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -43,8 +43,10 @@ lua5.1 \
 lua5.1-dev \
 git
 
-git clone https://github.com/vim/vim.git ~/project/src
-cd vim
+if [ ! -d ~/project/src/vim ]; then
+  git clone https://github.com/vim/vim.git ~/project/src
+fi
+cd ~/project/src/vim
 ./configure --with-features=huge \
             --enable-multibyte \
             --enable-rubyinterp=yes \
