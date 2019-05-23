@@ -5,7 +5,7 @@
 # @file: install_env.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-23 16:52:04
-# @last_modified_date: 2019-05-23 16:55:08
+# @last_modified_date: 2019-05-23 17:29:19
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -43,7 +43,7 @@ lua5.1 \
 lua5.1-dev \
 git
 
-git clone https://github.com/vim/vim.git
+git clone https://github.com/vim/vim.git ~/project/src
 cd vim
 ./configure --with-features=huge \
             --enable-multibyte \
