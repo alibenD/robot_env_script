@@ -5,7 +5,7 @@
 # @file: install_env.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-23 16:52:04
-# @last_modified_date: 2019-05-23 17:49:02
+# @last_modified_date: 2019-05-23 17:51:37
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -59,4 +59,4 @@ cd ~/project/src/vim
             --enable-gui=gtk2 \
             --enable-cscope \
             --prefix=$HOME/dev/env
-sudo make install
+make install
