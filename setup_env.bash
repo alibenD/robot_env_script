@@ -5,7 +5,7 @@
 # @file: setup_env.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-23 16:54:27
-# @last_modified_date: 2019-05-23 17:25:48
+# @last_modified_date: 2019-05-23 17:27:21
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -17,4 +17,4 @@ CREATED_YEAR=`date '+%Y'`
 
 #---Shell Command
 mkdir -p ~/dev/env
-echo ./bashrc >> ~/.bashrc
+cat ./bashrc >> ~/.bashrc
