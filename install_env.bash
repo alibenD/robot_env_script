@@ -5,7 +5,7 @@
 # @file: install_env.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-23 16:52:04
-# @last_modified_date: 2019-05-23 17:47:11
+# @last_modified_date: 2019-05-23 17:49:02
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -44,7 +44,7 @@ lua5.1-dev \
 git
 
 if [ ! -d ~/project/src/vim ]; then
-  git clone https://github.com/vim/vim.git ~/project/src
+  git clone https://github.com/vim/vim.git ~/project/src/vim
 fi
 cd ~/project/src/vim
 ./configure --with-features=huge \
