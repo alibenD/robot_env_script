@@ -5,7 +5,7 @@
 # @file: install_env.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-23 16:52:04
-# @last_modified_date: 2019-05-23 18:05:30
+# @last_modified_date: 2019-05-24 09:54:49
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -41,7 +41,8 @@ python3-dev \
 ruby-dev \
 lua5.1 \
 lua5.1-dev \
-git
+git \
+htop
 
 if [ ! -d ~/project/src/vim ]; then
   git clone https://github.com/vim/vim.git ~/project/src/vim
