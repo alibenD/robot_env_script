@@ -5,7 +5,7 @@
 # @file: install_vim_config.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-24 09:05:20
-# @last_modified_date: 2019-05-24 09:06:06
+# @last_modified_date: 2019-05-24 09:07:30
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -17,3 +17,4 @@ CREATED_YEAR=`date '+%Y'`
 
 #---Shell Command
 git clone https://github.com/alibenD/vim.git $HOME/.vim
+$HOME/.vim/auto_install.sh
