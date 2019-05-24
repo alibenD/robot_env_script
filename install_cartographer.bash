@@ -5,7 +5,7 @@
 # @file: install_cartographer.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2019-05-23 18:50:06
-# @last_modified_date: 2019-05-23 18:51:55
+# @last_modified_date: 2019-05-24 08:28:39
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -30,3 +30,4 @@ rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
 
 catkin_make_isolated --install --use-ninja
+echo "source $HOME/catkin_ws/devel_isolated/setup.bash" >> $HOME/.bashrc

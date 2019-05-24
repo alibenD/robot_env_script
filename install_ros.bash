@@ -5,7 +5,7 @@
 # @file: install_ros.bash
 # @author: aliben.develop@gmail.com
 # @created_date: 2018-11-06 14:33:45
-# @last_modified_date: 2019-05-23 18:44:45
+# @last_modified_date: 2019-05-24 08:19:30
 # @brief: TODO
 # @details: TODO
 #---***********************************************---
@@ -30,5 +30,4 @@ sudo apt -y install python-catkin-pkg-modules\
 sudo rosdep init
 rosdep update
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
